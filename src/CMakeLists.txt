@@ -18,6 +18,7 @@ target_link_libraries(${PROJECT_LIBRARY_TARGET_NAME}
     ignition-msgs${IGN_MSGS_VER}::ignition-msgs${IGN_MSGS_VER}
   PRIVATE
     ${ZeroMQ_TARGET}
+  INTERFACE
     CPPZMQ::CPPZMQ
 )
 
